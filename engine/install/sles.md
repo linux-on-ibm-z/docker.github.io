@@ -45,13 +45,11 @@ default, you need to
 [add it](https://download.opensuse.org/repositories/security).
 
 ```console
-# For SLES 15-SP2
-$ zypper addrepo https://download.opensuse.org/repositories/security:SELinux/SLE_15_SP2/security:SELinux.repo
-
-# For SLES 15-SP3
-$ zypper addrepo https://download.opensuse.org/repositories/security:SELinux/SLE_15_SP3/security:SELinux.repo
-```
-
+sudo zypper install -y lsb-release 
+sles_version=$(lsb_release -r |  rev | cut -c1)
+opensuse_repo="https://download.opensuse.org/repositories/security:SELinux/SLE_15_SP$sles_version/security:SELinux.repo"
+sudo zypper addrepo $opensuse_repo 
+ ```
 The `overlay2` storage driver is recommended.
 
 ### Uninstall old versions
