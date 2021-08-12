@@ -40,12 +40,16 @@ Archived versions aren't supported or tested.
 The [`SCC SUSE`](https://scc.suse.com/packages?name=SUSE%20Linux%20Enterprise%20Server&version=15.2&arch=s390x)
 repositories must be enabled. 
 
-The `SELinux (SLE_15_SP2)`repository must be enabled. This repository is not added by
+The `SELinux` repository must be enabled. This repository is not added by
 default, you need to
-[add it](https://download.opensuse.org/repositories/security:SELinux/SLE_15_SP2/security:SELinux.repo).
+[add it](https://download.opensuse.org/repositories/security).
 
 ```console
+# For SLES 15-SP2
 $ zypper addrepo https://download.opensuse.org/repositories/security:SELinux/SLE_15_SP2/security:SELinux.repo
+
+# For SLES 15-SP3
+$ zypper addrepo https://download.opensuse.org/repositories/security:SELinux/SLE_15_SP3/security:SELinux.repo
 ```
 
 The `overlay2` storage driver is recommended.
