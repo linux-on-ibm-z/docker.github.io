@@ -39,7 +39,7 @@ SLES versions:
 
 - SLES 15-SP4 on s390x (IBM Z)
 
-The [`SCC SUSE`](https://scc.suse.com/packages?name=SUSE%20Linux%20Enterprise%20Server&version=15.3&arch=s390x)
+The [`SCC SUSE`](https://scc.suse.com/packages?name=SUSE%20Linux%20Enterprise%20Server&version=15.4&arch=s390x)
 repositories must be enabled.
 
 The [OpenSUSE `SELinux` repository](https://download.opensuse.org/repositories/security:/SELinux/)
